@@ -1,0 +1,25 @@
+* Rewind
+Resume Emacs last `completing-read` session with saved input.
+
+Inspired by `ivy-resume` in [[https://github.com/abo-abo/swiper/blob/master/ivy.el][ivy.el]] but uses only native Emacs API and has no third party package dependency.
+
+* Install
+You could place =rewind.el= under [[https://www.emacswiki.org/emacs/LoadPath][Load Path]].
+
+* Set up
+Insert below code into =~/.emacs.d/init.el= to setup key bindings:
+#+BEGIN_SRC lisp
+(require 'rewind)
+(rewind-mode 1)
+#+END_SRC
+
+* Usage
+Run =M-x rewind-resume= to re-run original command and restore the saved completion arguments and minibuffer input.
+
+* Contact me
+Report bugs at [[https://github.com/redguardtoo/rewind]].
+
+* License
+This program is free software: you can redistribute it and/or modify it under the terms of the [[file:LICENSE][GNU General Public License]] as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [[file:LICENSE][GNU General Public License]] for more details.
